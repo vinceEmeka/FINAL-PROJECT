@@ -12,6 +12,11 @@ body {
 
 button {
   text-align: center;
+  width: 278px;
+  height: 75px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.32px;
 }
 /* NAVBAR SECTION ------------ */
 
@@ -120,7 +125,6 @@ button {
   line-height: 87.42px;
   text-align: center;
   color: #373737;
-
   padding: 40px;
   margin: 0 auto;
 }
@@ -156,12 +160,17 @@ button {
 .btn-light:hover {
   box-shadow: 8px 8px 10px rgba(111, 194, 71, 0.15);
 }
-.hero-img img {
+
+.hero-img {
+  width: 1260px;
+  height: 637px;
+  margin: 0 auto;
   margin-top: 46px;
+}
+.hero-img img {
   width: 100%;
   object-fit: contain;
   object-position: center;
-  height: 637px;
 }
 
 /* Trusted by SECTION -------- */
@@ -197,10 +206,12 @@ button {
   gap: 24px;
 }
 
+.company-logo {
+  margin: 10px auto;
+}
 .company-logo img {
   width: 307px;
   height: 117px;
-  padding: 0px 48.06px 0px 48.06px;
   background: #f9f9f9;
   object-fit: contain;
 }
@@ -323,6 +334,9 @@ button {
   text-align: left;
 }
 
+.valuation-image {
+}
+
 .valuation-image img {
   width: 100%;
   object-fit: contain;
@@ -337,7 +351,7 @@ button {
 
 /* RESPONSIVENESS  */
 
-@media (max-width: 634px) {
+/* @media (max-width: 634px) { 
   body {
   }
   .navlinks,
@@ -425,3 +439,4 @@ button {
     text-align: center;
   }
 }
+*/
