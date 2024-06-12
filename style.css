@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", serif;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+button {
+  text-align: center;
+}
+/* NAVBAR SECTION ------------ */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 103px;
+  box-shadow: 0px 4px 4px 0px #0000000d;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+
+.logo img {
+  width: 169.85px;
+  height: 23px;
+}
+
+.navlinks ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.32px;
+}
+
+.navlinks ul li {
+  list-style-type: none;
+  position: relative;
+  transition: display 0.15;
+}
+.navlinks ul li a {
+  text-decoration: none;
+  padding: 0 27px;
+  color: #636363;
+  display: flex;
+  text-align: left;
+  gap: 16px;
+}
+
+.navlinks ul li:hover .dropdown-menu {
+  display: block;
+}
+
+/* .navlinks ul li a i {
+  padding: 0 5px;
+} */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #d7d7d7;
+  margin-top: 10px;
+}
+
+.dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.dropdown-menu ul li a {
+  color: #000;
+}
+.navlinks ul li a img:hover .dropdown-menu {
+  display: block;
+  /* margin-left: 10px; */
+}
+.btn-primary {
+  background-color: #6fc247;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 12px 20px 12px 20px;
+  transition: box-shadow 0.15s;
+}
+.btn-primary:hover {
+  box-shadow: 8px 8px 10px rgba(111, 194, 71, 0.15);
+}
+
+.btn-primary img {
+  margin-left: 7px;
+}
+/* HERO SECTION --------------- */
+.hero {
+  padding-top: 150px;
+}
+.hero-header {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 87.42px;
+  text-align: center;
+  color: #373737;
+
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.hero-sub-header {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 43.2px;
+  text-align: center;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 46px;
+  gap: 32px;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #6fc247;
+  border: 1px solid #6fc247;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 12px 20px 12px 20px;
+  transition: box-shadow 0.15s;
+}
+
+.btn-light:hover {
+  box-shadow: 8px 8px 10px rgba(111, 194, 71, 0.15);
+}
+.hero-img img {
+  margin-top: 46px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  height: 637px;
+}
+
+/* Trusted by SECTION -------- */
+.trusted-by {
+  padding: 0px 115px 0px 115px;
+  gap: 32px;
+  margin-top: 30px;
+}
+
+.trusted-by-header {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 43.71px;
+  text-align: center;
+  color: #373737;
+}
+
+.trusted-by-sub-header {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+
+.trusted-by-text {
+  gap: 16px;
+}
+
+.companies {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.company-logo img {
+  width: 307px;
+  height: 117px;
+  padding: 0px 48.06px 0px 48.06px;
+  background: #f9f9f9;
+  object-fit: contain;
+}
+
+/* why-valutico section------- */
+.why-valutico {
+  margin-top: 50px;
+  padding: 72px 103px 72px 103px;
+  gap: 10px;
+  background: #111111;
+  color: #fff;
+}
+
+.why-valutico-intro {
+  gap: 16px;
+}
+
+.why-valutico-header {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 54.64px;
+  text-align: center;
+}
+
+.why-valutico-sub-header {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: #d7d7d7;
+}
+
+.why-valutico-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 24px;
+}
+.why-valutico-item {
+  margin-top: 30px;
+  padding: 10px;
+}
+.why-valutico-item .heading {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32.78px;
+  text-align: left;
+}
+
+.why-valutico-item .text {
+  margin-top: 24px;
+  font-size: 20px;
+  color: #d7d7d7;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+
+/* VALUATION SECTION ---------- */
+
+.valuation {
+  padding: 69px 103px 69px 103px;
+  gap: 80px;
+}
+
+.valuation-intro {
+  gap: 16px;
+}
+
+.valution-heading {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 43.71px;
+  text-align: center;
+  color: #373737;
+}
+
+.valuation-sub-heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 20px;
+  color: #373737;
+}
+
+.valuation-contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  /* margin-top: 40px; */
+  /* justify-content: center; */
+  padding: 69px 103px 69px 103px;
+}
+
+.valuation-content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+}
+
+.valuation-text-item {
+  padding: 32px 0px 0px 0px;
+  gap: 10px;
+  border-radius: 16px 0px 0px 0px;
+}
+
+.valuation-text-item .heading {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32.78px;
+  text-align: left;
+  color: #373737;
+}
+.valuation-text-item .paragraph {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+
+.valuation-image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.valuation-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+
+/* RESPONSIVENESS  */
+
+@media (max-width: 634px) {
+  body {
+  }
+  .navlinks,
+  .nav-btn {
+    display: none;
+  }
+
+  .hero-header {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 64px;
+    margin-top: 0px;
+  }
+
+  .hero-sub-header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+
+  .hero-img img {
+    width: 754px;
+    margin-top: 0px;
+  }
+
+  .trusted-by {
+    margin-top: 0px;
+  }
+  .trusted-by-header {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .trusted-by-sub-header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+  .companies {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 0px;
+  }
+  .company-logo img {
+    background: #f9f9f9;
+    object-fit: contain;
+    width: 216px;
+    height: 80px;
+    padding: 7px 49px 7.53px 49px;
+    border-radius: 4px 0px 0px 0px;
+  }
+
+  .why-valutico-header {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.78px;
+  }
+
+  .why-valutico-sub-header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+
+  .why-valutico-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .valution-heading {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.78px;
+    text-align: center;
+  }
+
+  .valuation-sub-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+  }
+}
