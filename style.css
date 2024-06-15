@@ -18,6 +18,7 @@ button {
   font-weight: 700;
   line-height: 27.32px;
 }
+
 /* NAVBAR SECTION ------------ */
 
 .navbar {
@@ -127,6 +128,7 @@ button {
   color: #373737;
   padding: 40px;
   margin: 0 auto;
+  max-width: 1000px;
 }
 
 .hero-sub-header {
@@ -134,6 +136,8 @@ button {
   font-weight: 500;
   line-height: 43.2px;
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .hero-buttons {
@@ -193,6 +197,8 @@ button {
   font-weight: 500;
   line-height: 30px;
   text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .trusted-by-text {
@@ -242,6 +248,8 @@ button {
   line-height: 30px;
   text-align: center;
   color: #d7d7d7;
+  max-width: 780px;
+  margin: 0 auto;
 }
 
 .why-valutico-items {
@@ -268,6 +276,7 @@ button {
   font-weight: 500;
   line-height: 30px;
   text-align: left;
+  max-width: 350px;
 }
 
 /* VALUATION SECTION ---------- */
@@ -296,6 +305,8 @@ button {
   text-align: center;
   margin-top: 20px;
   color: #373737;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .valuation-contents {
@@ -332,14 +343,17 @@ button {
   font-weight: 500;
   line-height: 30px;
   text-align: left;
+  max-width: 350px;
 }
 
 .valuation-image {
 }
 
 .valuation-image img {
+  width: 731px;
+  height: 693px;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .valuation-button {
@@ -348,15 +362,50 @@ button {
   align-items: center;
   margin: 50px 0 0 0;
 }
+/* hamburger buttons  */
+.hamburger-button {
+  /* display: none; */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
 
+.hamburger-button .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  margin: 6px 0;
+}
 /* RESPONSIVENESS  */
+@media (max-width: 960px) {
+}
+@media (max-width: 670px) {
+}
 
-/* @media (max-width: 634px) { 
-  body {
+@media (max-width: 834px) {
+  /* NAVBAR SECTION ------------ */
+
+  .navbar {
+    padding: 40px 40px;
   }
-  .navlinks,
+
+  .logo img {
+    width: 169.85px;
+    height: 23px;
+  }
+
+  .navlinks ul {
+    display: none;
+  }
+
   .nav-btn {
     display: none;
+  }
+
+  .hero {
+    padding-top: 100px;
   }
 
   .hero-header {
@@ -364,21 +413,30 @@ button {
     font-weight: 800;
     line-height: 64px;
     margin-top: 0px;
+    max-width: 700px;
   }
 
   .hero-sub-header {
     font-size: 20px;
     font-weight: 500;
     line-height: 40px;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   .hero-img img {
-    width: 754px;
+    width: 100%;
     margin-top: 0px;
+  }
+
+  .hero-img {
+    width: 754px;
+    height: 382px;
   }
 
   .trusted-by {
     margin-top: 0px;
+    padding: 10px;
   }
   .trusted-by-header {
     font-size: 24px;
@@ -389,13 +447,14 @@ button {
     font-size: 20px;
     font-weight: 500;
     line-height: 40px;
+    max-width: 650px;
   }
   .companies {
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
-    padding: 0px;
+    margin: 0 auto;
   }
   .company-logo img {
     background: #f9f9f9;
@@ -416,6 +475,7 @@ button {
     font-size: 20px;
     font-weight: 500;
     line-height: 40px;
+    max-width: 700px;
   }
 
   .why-valutico-items {
@@ -425,18 +485,258 @@ button {
     gap: 24px;
   }
 
+  .why-valutico-item .text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    max-width: 500px;
+    margin-top: 8px;
+  }
+
+  .valuation {
+    padding: 64px 40px 64px 40px;
+    gap: 32px;
+  }
   .valution-heading {
     font-size: 24px;
     font-weight: 800;
     line-height: 32.78px;
     text-align: center;
+    max-width: 367px;
+    margin: 0 auto;
   }
 
   .valuation-sub-heading {
     font-size: 20px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 32.78px;
     text-align: center;
+    margin-top: 0px;
+    color: #373737;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .valuation-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    padding: 10px;
+  }
+
+  .valuation-content-text {
+    gap: 0px;
+  }
+
+  .valuation-text-item {
+    padding: 32px 0px 32px 0px;
+    gap: 10px;
+    border-radius: 16px 0px 0px 0px;
+  }
+
+  .valuation-image img {
+    object-fit: cover;
+    width: 369px;
+    height: 643px;
+  }
+
+  .valuation-button {
+    padding: 24px 40px 24px 40px;
+    gap: 16px;
+    border-radius: 16px 0px 0px 0px;
   }
 }
-*/
+
+@media (max-width: 600px) {
+  /* NAVBAR SECTION ------------ */
+
+  .navbar {
+    padding: 20px 20px;
+  }
+
+  .logo img {
+    width: 118px;
+    height: 16px;
+  }
+
+  .navlinks ul {
+    display: none;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 50px;
+  }
+
+  .hero-header {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+  }
+
+  .hero-sub-header {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .hero-img img {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .hero-img {
+    width: 327px;
+    height: 168px;
+  }
+
+  button {
+    width: 152px;
+    height: 44px;
+    padding: 12px 8px 12px 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .trusted-by {
+    margin-top: 0px;
+    padding: 10px;
+  }
+  .trusted-by-header {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .trusted-by-sub-header {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    max-width: 280px;
+  }
+  .companies {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    padding: 64px 0px 64px 0px;
+    gap: 8px;
+  }
+  .company-logo img {
+    background: #f9f9f9;
+    object-fit: contain;
+    width: 160px;
+    height: 62px;
+    padding: 5px 33px 4.85px 33px;
+    border-radius: 4px 0px 0px 0px;
+  }
+
+  .why-valutico {
+    padding: 64px 32px 64px 32px;
+    gap: 10px;
+  }
+  .why-valutico-header {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 27.32px;
+  }
+
+  .why-valutico-sub-header {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    max-width: 300px;
+  }
+
+  .why-valutico-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .why-valutico-item .heading {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.59px;
+    text-align: left;
+  }
+
+  .why-valutico-item .text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    max-width: 280px;
+    margin-top: 8px;
+  }
+
+  .valuation {
+    padding: 64px 0px 64px 0px;
+    gap: 16px;
+  }
+  .valution-heading {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 27.32px;
+    text-align: center;
+    max-width: 367px;
+    margin: 0 auto;
+  }
+
+  .valuation-sub-heading {
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 280px;
+  }
+
+  .valuation-contents {
+    display: flex;
+    flex-direction: column-reverse;
+    column-gap: 16px;
+    padding: 10px;
+  }
+
+  .valuation-content-text {
+    gap: 0px;
+  }
+
+  .valuation-text-item {
+    padding: 32px 0px 32px 0px;
+    gap: 10px;
+    border-radius: 16px 0px 0px 0px;
+    margin: 0 auto;
+  }
+
+  .valuation-text-item .heading {
+    font-size: 18px;
+    line-height: 24.59px;
+    text-align: left;
+  }
+
+  .valuation-image img {
+    width: 329px;
+    height: 310px;
+  }
+
+  .valuation-image {
+    width: 329px;
+    height: 310px;
+    margin: 0 auto;
+  }
+
+  .valuation-button {
+    padding: 12px 8px 12px 8px;
+  }
+}
