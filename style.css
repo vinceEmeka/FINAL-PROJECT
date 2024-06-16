@@ -601,17 +601,17 @@ button {
   }
 
   button {
-    width: 182px;
+    width: 225px;
     height: 44px;
     padding: 12px 8px 12px 8px;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
-    min-width: 180px;
   }
 
   .hero-buttons {
-    padding: 0 15px;
+    padding: 0 20px;
+    column-gap: 10px;
   }
 
   .trusted-by {
