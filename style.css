@@ -25,7 +25,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 103px;
+  padding: 30px 50px;
   box-shadow: 0px 4px 4px 0px #0000000d;
   position: fixed;
   width: 100%;
@@ -166,8 +166,7 @@ button {
 }
 
 .hero-img {
-  width: 1260px;
-  height: 637px;
+  width: 800px;
   margin: 0 auto;
   margin-top: 46px;
 }
@@ -209,6 +208,7 @@ button {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  /* justify-content: center; */
   gap: 24px;
 }
 
@@ -216,8 +216,8 @@ button {
   margin: 10px auto;
 }
 .company-logo img {
-  width: 307px;
-  height: 117px;
+  width: 170px;
+  height: 64px;
   background: #f9f9f9;
   object-fit: contain;
 }
@@ -358,10 +358,12 @@ button {
 
 .valuation-button {
   display: flex;
+
   justify-content: center;
   align-items: center;
   margin: 50px 0 0 0;
 }
+
 /* hamburger buttons  */
 .hamburger-button {
   /* display: none; */
@@ -379,10 +381,6 @@ button {
   margin: 6px 0;
 }
 /* RESPONSIVENESS  */
-@media (max-width: 960px) {
-}
-@media (max-width: 670px) {
-}
 
 @media (max-width: 834px) {
   /* NAVBAR SECTION ------------ */
@@ -535,10 +533,13 @@ button {
     border-radius: 16px 0px 0px 0px;
   }
 
+  .valuation-image {
+  }
   .valuation-image img {
     object-fit: cover;
     width: 369px;
-    height: 643px;
+
+    /* object-fit: contain; */
   }
 
   .valuation-button {
@@ -600,12 +601,17 @@ button {
   }
 
   button {
-    width: 152px;
+    width: 182px;
     height: 44px;
     padding: 12px 8px 12px 8px;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
+    min-width: 180px;
+  }
+
+  .hero-buttons {
+    padding: 0 15px;
   }
 
   .trusted-by {
@@ -705,7 +711,7 @@ button {
     display: flex;
     flex-direction: column-reverse;
     column-gap: 16px;
-    padding: 10px;
+    padding: 25px;
   }
 
   .valuation-content-text {
@@ -737,6 +743,7 @@ button {
   }
 
   .valuation-button {
+    margin-top: 0;
     padding: 12px 8px 12px 8px;
   }
 }
