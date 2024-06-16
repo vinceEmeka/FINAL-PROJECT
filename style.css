@@ -58,6 +58,10 @@ button {
   display: flex;
   text-align: left;
   gap: 16px;
+  transition: color 0.15s;
+}
+.navlinks ul li a:hover {
+  color: #6fc247;
 }
 
 .navlinks ul li:hover .dropdown-menu {
@@ -96,6 +100,29 @@ button {
   display: block;
   /* margin-left: 10px; */
 }
+
+/* :root {
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hambuger-gap: 6px;
+  --foreground: #373737;
+  --background: white;
+}
+
+.hambuger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hambuger-gap);
+}
+.hambuger-menu::before,
+.hambuger-menu::after,
+.hambuger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+} */
+
 .btn-primary {
   background-color: #6fc247;
   color: #fff;
@@ -570,7 +597,7 @@ button {
   }
 
   .hero {
-    padding-top: 50px;
+    padding-top: 80px;
   }
 
   .hero-header {
@@ -612,6 +639,24 @@ button {
   .hero-buttons {
     padding: 0 20px;
     column-gap: 10px;
+  }
+
+  button.btn-primary img {
+    width: 16px;
+  }
+  .btn-primary,
+  .btn-light {
+    width: 182px;
+    height: 44px;
+  }
+
+  button.btn-primary .btn-text {
+    width: 110px;
+    height: 20px;
+  }
+  button.btn-light .btn-text {
+    width: 110px;
+    height: 20px;
   }
 
   .trusted-by {
