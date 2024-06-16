@@ -653,7 +653,7 @@ button {
   button.btn-primary .btn-text {
     width: 110px;
     /* height: 20px; */
-    text-align: left;
+    /* text-align: left; */
   }
   button.btn-light .btn-text {
     width: 110px;
