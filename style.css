@@ -45,6 +45,7 @@ header {
 .hamburger {
   display: none;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .navbar .hamburger .line {
@@ -52,6 +53,7 @@ header {
   height: 3px;
   margin: 5px;
   background-color: #373737;
+  transition: all 0.3s ease;
 }
 .logo img {
   width: 169.85px;
@@ -89,10 +91,6 @@ header {
   display: block;
 }
 
-/* .navlinks ul li a i {
-  padding: 0 5px;
-} */
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -119,30 +117,7 @@ header {
 }
 .navlinks ul li a img:hover .dropdown-menu {
   display: block;
-  /* margin-left: 10px; */
 }
-
-/* :root {
-  --bar-width: 60px;
-  --bar-height: 8px;
-  --hambuger-gap: 6px;
-  --foreground: #373737;
-  --background: white;
-}
-
-.hambuger-menu {
-  display: flex;
-  flex-direction: column;
-  gap: var(--hambuger-gap);
-}
-.hambuger-menu::before,
-.hambuger-menu::after,
-.hambuger-menu input {
-  content: "";
-  width: var(--bar-width);
-  height: var(--bar-height);
-  background-color: var(--foreground);
-} */
 
 .btn-primary {
   background-color: #6fc247;
@@ -412,25 +387,9 @@ header {
   margin: 50px 0 0 0;
 }
 
-/* hamburger buttons  */
-.hamburger-button {
-  /* display: none; */
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 1000;
-}
-
-.hamburger-button .hamburger-line {
-  width: 30px;
-  height: 3px;
-  background: #333;
-  margin: 6px 0;
-}
 /* RESPONSIVENESS  */
 
-@media (max-width: 1164px) {
+@media (max-width: 834px) {
   /* NAVBAR SECTION ------------ */
 
   .navbar {
@@ -449,19 +408,44 @@ header {
     top: 70px;
     left: 0;
     width: 100%;
+    height: 50vh;
     background-color: #373737;
     text-align: center;
     padding-bottom: 20px;
     gap: 20px;
+    /* opacity: 0.8; */
+  }
+
+  .navlinks ul li a {
+    color: #fff;
+  }
+
+  .navlinks ul .dropdown-menu ul {
+    display: none;
   }
   .navlinks ul img {
     display: none;
   }
 
-  .navbar .navlinks.active {
+  .navlinks.active ul {
     display: flex;
+    transition: all 0.3s ease;
   }
 
+  .navbar .hamburger {
+    display: block;
+  }
+
+  .navbar .hamburger.active .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .navbar .hamburger.active .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .navbar .hamburger.active .line2 {
+    opacity: 0;
+  }
   .nav-btn {
     display: none;
   }
@@ -635,6 +619,10 @@ header {
 
   .nav-btn {
     display: none;
+  }
+
+  .navbar .hamburger .line {
+    width: 25px;
   }
 
   .hero {
